@@ -1,0 +1,25 @@
+ node -v
+
+ npx create-react-app organo
+
+
+
+ cd organo
+
+Pede para ele listar tudo que tem lá dentro com ls - la.
+ ls - la
+
+
+
+npm start 
+         Starts the development server.
+
+npm run build
+        Bundles the app into static files for productions.
+
+
+npm test
+        Starts the test runner.
+
+npm run eject
+        Removes this tool and copies build dependencies, configurations files and scripts into the app directory. If you do this, you can't go back!
