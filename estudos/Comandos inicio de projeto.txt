@@ -10,6 +10,10 @@ Pede para ele listar tudo que tem lá dentro com ls - la.
  ls - la
 
 
+npm install
+     Para istalar as dependência
+
+
 
 npm start 
          Starts the development server.
