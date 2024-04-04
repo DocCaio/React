@@ -33,5 +33,12 @@ export const CampoTexto = ({ titulo, ...props }) => {
         <InputEstilizado
             {...props}
         />
+        <ErrorMessage name={props.name}>
+            {mensagens => (
+                <div style={{ color: 'red', marginTop: '4px' }}>
+                    {mensagens}
+                </div>
+            )}
+        </ErrorMessage>
     </LabelEstilizada>)
 }
