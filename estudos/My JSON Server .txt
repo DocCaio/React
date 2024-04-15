@@ -1,0 +1,13 @@
+ My JSON Server 
+
+
+https://my-json-server.typicode.com/
+
+O tutorial contém os seguintes passos:
+
+1-Create a repository on GitHub (<your-username>/<your-repo>)
+2-Create a db.json file ("Criar um arquivo db.json)
+3-Visit "https://my-json-server.typicode.com/your-username/your-repo" to access your server
+
+
+Conforme dito no tópico 3 do tutorial, para acessar o servidor, precisamos copiar a URL e inserir o nosso username do GitHub, seguido do nome do repositório. O meu é "monicahillman" e o repositório é "cinetag-api" (Exemplo: https://my-json-server.typicode.com/monicahillman/cinetag-api).
