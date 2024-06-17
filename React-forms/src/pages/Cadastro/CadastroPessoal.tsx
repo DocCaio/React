@@ -16,6 +16,15 @@ const CadastroPessoal = () => {
     console.log(dados);
   };
 
+  function validarEmail(valor: string) {
+    const formatoEmail = /^[^\s@]+@alura\.com\.br$/;
+    if (!formatoEmail.test(valor)) {
+      console.error("Endereço de email é inválido para este domínio");
+      return false;
+    }
+    return true;
+  }
+
   return (
     <>
       <Titulo>Insira alguns dados básicos:</Titulo>
@@ -26,7 +35,7 @@ const CadastroPessoal = () => {
             id="campo-nome"
             placeholder="Digite seu nome completo"
             type="text"
-            {...register("nome")}
+            {...register("nome", { required: true, minLength: 5 })}
           />
         </Fieldset>
         <Fieldset>
@@ -35,7 +44,7 @@ const CadastroPessoal = () => {
             id="campo-email"
             placeholder="Insira seu endereço de email"
             type="email"
-            {...register("email")}
+            {...register("email", { required: true, validate: validarEmail })}
           />
         </Fieldset>
 
@@ -44,8 +53,11 @@ const CadastroPessoal = () => {
           <Input
             id="campo-telefone"
             type="text"
-            placeholder="Ex: (DDD) XXXXX-XXXX"
-            {...register("telefone")}
+            placeholder="Ex: (DD) XXXXX-XXXX"
+            {...register("telefone", {
+              pattern: /^\(\d{2,3}\) \d{5}-\d{4}$/,
+              required: true,
+            })}
           />
         </Fieldset>
 
